@@ -1,0 +1,8 @@
+D:\BuilderFoundation\UXUI_Example\stitch_home_page\builder-foundation\app\layout.tsx: line 22, col 9, Warning - Custom fonts not added in `pages/_document.js` will only load for a single page. This is discouraged. See: https://nextjs.org/docs/messages/no-page-custom-font (@next/next/no-page-custom-font)
+D:\BuilderFoundation\UXUI_Example\stitch_home_page\builder-foundation\app\page.tsx: line 155, col 86, Error - `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`. (react/no-unescaped-entities)
+D:\BuilderFoundation\UXUI_Example\stitch_home_page\builder-foundation\app\page.tsx: line 155, col 108, Error - `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`. (react/no-unescaped-entities)
+D:\BuilderFoundation\UXUI_Example\stitch_home_page\builder-foundation\components\layout\Navbar.tsx: line 2, col 8, Error - 'Image' is defined but never used. (@typescript-eslint/no-unused-vars)
+D:\BuilderFoundation\UXUI_Example\stitch_home_page\builder-foundation\tailwind.config.ts: line 30, col 5, Error - A `require()` style import is forbidden. (@typescript-eslint/no-require-imports)
+D:\BuilderFoundation\UXUI_Example\stitch_home_page\builder-foundation\tailwind.config.ts: line 31, col 5, Error - A `require()` style import is forbidden. (@typescript-eslint/no-require-imports)
+
+6 problems
