@@ -12,7 +12,7 @@ export default function Navbar() {
                     <nav className="hidden md:flex items-center gap-8">
                         <Link href="/courses" className="text-sm font-medium hover:text-primary transition-colors">Courses</Link>
                         <Link href="/dashboard" className="text-sm font-medium hover:text-primary transition-colors">Dashboard</Link>
-                        <Link href="/pricing" className="text-sm font-medium hover:text-primary transition-colors">Pricing</Link>
+
                     </nav>
                 </div>
                 <div className="flex items-center gap-6">
