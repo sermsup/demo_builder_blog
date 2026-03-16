@@ -4,7 +4,10 @@
 
 @layer base {
   body {
-    @apply bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 font-display antialiased;
+    @apply bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 font-thai antialiased;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-thai;
   }
 }
 

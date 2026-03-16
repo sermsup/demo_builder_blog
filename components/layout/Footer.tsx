@@ -8,7 +8,7 @@ export default function Footer() {
                     <div className="col-span-2">
                         <div className="flex items-center gap-2 text-slate-900 dark:text-slate-100 mb-6">
                             <span className="material-symbols-outlined text-primary text-3xl">school</span>
-                            <h2 className="text-xl font-bold tracking-tight">Builder Foundation</h2>
+                            <h2 className="text-xl font-semibold tracking-tight">Builder Foundation</h2>
                         </div>
                         <p className="text-slate-500 text-sm max-w-xs leading-relaxed">
                             Where AI Builders Begin.

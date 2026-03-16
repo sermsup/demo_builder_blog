@@ -17,7 +17,8 @@ const config: Config = {
         "emerald-accent": "#10b981",
       },
       fontFamily: {
-        display: ["Inter", "sans-serif"],
+        display: ["Inter", "Prompt", "sans-serif"],
+        thai: ["Prompt", "sans-serif"],
       },
       borderRadius: {
         DEFAULT: "0.25rem",

@@ -13,13 +13,14 @@ export default function Home() {
               <h1 className="text-5xl lg:text-7xl font-black leading-tight tracking-tight">
                 Where AI Builders <span className="text-primary">Begin</span>
               </h1>
-              <p className="text-lg text-slate-600 dark:text-slate-400 max-w-lg leading-relaxed">
-                Build your own programs and turn your ideas into something usable — start creating today.
+              <p className="text-lg text-slate-600 dark:text-slate-400 max-w-lg leading-relaxed font-thai">
+                เปลี่ยนไอเดียของคุณให้กลายเป็นโปรแกรมที่ใช้งานได้จริง <br />
+                เริ่มสร้างได้ตั้งแต่วันนี้
               </p>
             </div>
 
             <div className="flex flex-wrap gap-4">
-              <Link href="/courses" className="bg-primary text-background-dark px-8 py-4 rounded-xl text-lg font-bold hover:shadow-lg hover:shadow-primary/20 transition-all text-center">
+              <Link href="/courses" className="bg-primary text-background-dark px-8 py-4 rounded-xl text-lg font-semibold hover:shadow-lg hover:shadow-primary/20 transition-all text-center">
                 Start Building
               </Link>
 
@@ -41,8 +42,8 @@ export default function Home() {
                   <span className="material-symbols-outlined text-primary">rocket_launch</span>
                 </div>
                 <div>
-                  <p className="text-xl font-bold">Beginner</p>
-                  <p className="text-xs text-slate-500 uppercase font-bold tracking-widest">Friendly</p>
+                  <p className="text-xl font-semibold">Beginner</p>
+                  <p className="text-xs text-slate-500 uppercase font-semibold tracking-widest">Friendly</p>
                 </div>
               </div>
             </div>
@@ -57,22 +58,31 @@ export default function Home() {
             <div className="flex gap-4">
               <span className="material-symbols-outlined text-primary text-4xl">workspace_premium</span>
               <div>
-                <h3 className="text-lg font-bold">Beginner Friendly</h3>
-                <p className="text-slate-500 text-sm mt-1 leading-relaxed">Start building useful programs even if you have never written code before.</p>
+                <h3 className="text-lg font-semibold">Beginner Friendly</h3>
+                <p className="text-slate-500 text-sm mt-1 leading-relaxed">
+                  เริ่มสร้างโปรแกรมได้ <br />
+                  แม้ไม่มีพื้นฐานการเขียนโค้ด
+                </p>
               </div>
             </div>
             <div className="flex gap-4">
               <span className="material-symbols-outlined text-primary text-4xl">handyman</span>
               <div>
-                <h3 className="text-lg font-bold">Practical Focus</h3>
-                <p className="text-slate-500 text-sm mt-1 leading-relaxed">Less theory, more building. Every course ends with a shipped product for your portfolio.</p>
+                <h3 className="text-lg font-semibold">Practical Focus</h3>
+                <p className="text-slate-500 text-sm mt-1 leading-relaxed">
+                  เรียนแบบเน้นลงมือทำ <br />
+                  เพื่อสร้างผลงานที่ใช้ได้จริง
+                </p>
               </div>
             </div>
             <div className="flex gap-4">
               <span className="material-symbols-outlined text-primary text-4xl">all_inclusive</span>
               <div>
-                <h3 className="text-lg font-bold">Lifetime Access</h3>
-                <p className="text-slate-500 text-sm mt-1 leading-relaxed">Enroll once and get lifetime access to course materials, source code, and updates.</p>
+                <h3 className="text-lg font-semibold">Lifetime Access</h3>
+                <p className="text-slate-500 text-sm mt-1 leading-relaxed">
+                  สมัครครั้งเดียว เรียนได้ตลอด <br />
+                  พร้อมเนื้อหาและอัปเดตในอนาคต
+                </p>
               </div>
             </div>
           </div>
@@ -83,10 +93,10 @@ export default function Home() {
       <section className="mx-auto max-w-7xl px-6 lg:px-20">
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12">
           <div className="space-y-2">
-            <h2 className="text-3xl font-bold tracking-tight">Featured Courses</h2>
+            <h2 className="text-3xl font-semibold tracking-tight">Featured Courses</h2>
 
           </div>
-          <Link href="/courses" className="text-primary font-bold flex items-center gap-2 hover:underline">
+          <Link href="/courses" className="text-primary font-semibold flex items-center gap-2 hover:underline">
             Explore all courses <span className="material-symbols-outlined">arrow_forward</span>
           </Link>
         </div>
@@ -106,21 +116,21 @@ export default function Home() {
                 )}
               </div>
               <div className="p-6">
-                <p className="text-xs font-bold text-primary uppercase tracking-widest mb-2">{course.category}</p>
-                <h3 className="text-xl font-bold mb-2 group-hover:text-primary transition-colors line-clamp-2 h-14">{course.title}</h3>
+                <p className="text-xs font-semibold text-primary uppercase tracking-widest mb-2">{course.category}</p>
+                <h3 className="text-xl font-semibold mb-2 group-hover:text-primary transition-colors line-clamp-2 h-14">{course.title}</h3>
                 <div className="flex items-center gap-2 mb-4">
-                  <div className="w-6 h-6 rounded-full bg-primary/20 flex items-center justify-center text-[10px] font-bold text-primary border border-primary/10">
+                  <div className="w-6 h-6 rounded-full bg-primary/20 flex items-center justify-center text-[10px] font-semibold text-primary border border-primary/10">
                     {course.instructorAvatar}
                   </div>
                   <span className="text-xs font-medium text-slate-500">{course.instructorName}</span>
                 </div>
                 <div className="flex items-center justify-between border-t border-primary/5 pt-4">
                   {course.badge === 'NEW' ? (
-                    <span className="text-2xl font-black text-slate-900 dark:text-slate-100">FREE</span>
+                    <span className="text-2xl font-semibold text-slate-900 dark:text-slate-100">FREE</span>
                   ) : course.price > 0 ? (
                     <span className="text-2xl font-black">${course.price}</span>
                   ) : (
-                    <span className="text-sm font-bold text-slate-400">Stay Tuned</span>
+                    <span className="text-sm font-semibold text-slate-400">Stay Tuned</span>
                   )}
                   {course.badge === 'NEW' && (
                     <button className="p-2 rounded-lg bg-primary/10 text-primary hover:bg-primary hover:text-background-dark transition-all">

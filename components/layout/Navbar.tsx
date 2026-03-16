@@ -7,7 +7,7 @@ export default function Navbar() {
                 <div className="flex items-center gap-8">
                     <Link href="/" className="flex items-center gap-2 text-slate-900 dark:text-slate-100">
                         <span className="material-symbols-outlined text-primary text-3xl">school</span>
-                        <h2 className="text-xl font-bold tracking-tight">Builder Foundation</h2>
+                        <h2 className="text-xl font-semibold tracking-tight">Builder Foundation</h2>
                     </Link>
                     <nav className="hidden md:flex items-center gap-8">
                         <Link href="/courses" className="text-sm font-medium hover:text-primary transition-colors">Courses</Link>
