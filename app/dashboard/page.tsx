@@ -1,15 +1,26 @@
+"use client";
+
 import Link from 'next/link';
+import { useSession } from "next-auth/react";
 
 export default function DashboardPage() {
+    const { data: session } = useSession();
+
     return (
         <div className="max-w-7xl mx-auto px-6 lg:px-20 py-10 min-h-screen">
 
             {/* Welcome Banner */}
             <div className="bg-primary/5 border border-primary/20 rounded-3xl p-8 mb-12 flex flex-col md:flex-row justify-between items-center gap-6">
                 <div className="flex items-center gap-6">
-                    <div className="size-20 rounded-full border-4 border-white dark:border-slate-800 bg-slate-300 shadow-md"></div>
+                    <div className="size-20 rounded-full border-4 border-white dark:border-slate-800 bg-slate-300 shadow-md overflow-hidden flex items-center justify-center">
+                        {session?.user?.image ? (
+                            <img src={session.user.image} alt={session.user.name || ''} className="w-full h-full object-cover" />
+                        ) : (
+                            <span className="material-symbols-outlined text-4xl text-slate-500">person</span>
+                        )}
+                    </div>
                     <div>
-                        <h1 className="text-3xl font-black mb-1">Welcome back, Alex!</h1>
+                        <h1 className="text-3xl font-black mb-1">Welcome back, {session?.user?.name || 'Builder'}!</h1>
                         <p className="text-slate-500 text-sm">You are on a 14-day learning streak. Keep it up!</p>
                     </div>
                 </div>
