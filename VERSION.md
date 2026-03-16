@@ -1,27 +1,22 @@
-# Version 1.1.0 - Authentication & Dynamic Dashboard
+# Version 1.2.0 - Supabase Database Integration
 
-This version completes the integration of Google Authentication and makes the user dashboard dynamic and protected.
+This version introduces the complete database schema and mockup data seed for Supabase.
 
 ## Features & Improvements
 
-### 1. Google Authentication
-- Fully integrated Google OAuth via `next-auth`.
-- Context-aware Navbar: Shows "Login with Google" when out, and "User Name + Icon" when in.
-- Minimal icon-based logout functionality.
+### 1. Database Infrastructure (Supabase)
+- **Schema Design**: Comprehensive SQL schema with 12+ tables covering Users, Courses, Lessons, Quizzes, and Certificates.
+- **YouTube Integration**: Lessons now track `youtube_video_id` for cost-effective video hosting.
+- **Mockup Data Seed**: Ready-to-import `seed.sql` file with pre-populated courses, instructors, and initial progress for key users.
+- **Row Level Security (RLS)**: Implemented security policies at the database level.
+- **Automated Triggers**: Added PL/pgSQL function to sync Auth users with User Profiles automatically.
 
-### 2. Protected & Dynamic Dashboard
-- Added `middleware.ts` to protect `/dashboard` route from unauthenticated access.
-- Dashboard now displays the authenticated user's name and profile image dynamically from session data.
-
-### 3. Configurable Session Security
-- Added `NEXTAUTH_SESSION_MAX_AGE` in `.env.local` to control session timeout (Default: 30 minutes).
-
-### 4. Technical Infrastructure
-- Implemented `AuthProvider` for global session management.
-- Standardized project structure for full-stack Next.js development.
-- Added `backend_design_cfg.md` with the strategy for future Backend/DB scalability.
+### 2. Previous Features (v1.1.0)
+- Google Authentication integration.
+- Dynamic & Protected Dashboard.
+- Configurable Session Timeout (NEXTAUTH_SESSION_MAX_AGE).
 
 ## Deployment Status
-- Verified on local dev server.
-- Successfully pushed to GitHub.
-- Ready for Vercel production deployment.
+- Schema and Seed files verified in Supabase SQL Editor.
+- Ready for Backend API integration.
+- Code pushed and tagged as `v1.2.0-supabase-db-design`.
